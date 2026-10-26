@@ -3,7 +3,7 @@ import random
 
 name=input("enter your name ")
 print(f"hey {name}")
-def number_guessing_game():
+def numberguessinggame():
     secret_number = random.randint(1, 20)
     attempts = 0
 
@@ -36,15 +36,15 @@ def number_guessing_game():
             print(f"Attempts: {attempts}")
 
             if attempts == 1:
-                rank = "BULLSEYE!!! You are the Guessing God!"
+                rank = "BULLSEYE!!!"
             elif attempts <= 3:
-                rank = "Legendary Guesser!"
+                rank = "Legendary"
             elif attempts <= 6:
-                rank = "Great Guesser!"
+                rank = "good"
             elif attempts <= 8:
-                rank = "Mid Guesser!"
+                rank = "Mid"
             else:
-                rank = "Failure"
+                rank = "Fail"
 
             print(f"\nYour rank: {rank}")
 
@@ -55,7 +55,7 @@ def main():
     rounds = 0
 
     while True:
-        rank = number_guessing_game()
+        rank = numberguessinggame()
         rounds += 1
 
         print("SCOREBOARD:- ")
