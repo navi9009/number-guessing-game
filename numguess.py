@@ -2,7 +2,7 @@
 import random
 
 name=input("enter your name ")
-print(f"hey there {name}")
+print(f"hey {name}")
 def number_guessing_game():
     secret_number = random.randint(1, 20)
     attempts = 0
